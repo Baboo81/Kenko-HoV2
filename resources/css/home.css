@@ -1,0 +1,565 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&display=swap" rel="stylesheet">');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&display=swap" rel="stylesheet">');
+
+@font-face
+{
+  font-family: 'Dastin';
+  src : url('../fonts/Dastin.otf') format('opentype'),
+        url('../fonts/Dastin.ttf') format('trutype'),
+        url('../fonts/Dastin.woff') format('woff'),
+        url('../fonts/Dastin.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root
+{
+    --vert : #536964;
+    --violet : #bd8bca;
+    --orange : #e47c3c;
+    --grisF : #8b9cb6;
+    --gris : #bfc1c2;
+    --or : #FFFFF0;
+    --beige : #f1efe9;
+    --brun : #e3c7af;
+    --noir : #282828;
+}
+
+html, body
+{
+    width: 100% !important;
+    background-color: var(--or) !important;
+    overflow-x: hidden;
+    font-family: "Dastin";
+    min-height: 500px;
+    min-width: 320px;
+}
+
+.fontPink
+{
+    color: var(--violet);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Section Hero */
+.heroHo
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../img/home/KenkoHo_banner.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--brun);
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.heroHo-content
+{
+    max-width: 800px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 90px;
+}
+
+.mainTitleHeroHo
+{
+    font-size: clamp(2rem, 6vw + 1rem, 5rem) !important;
+    letter-spacing: .8rem;
+    margin-bottom: 1rem;
+}
+
+h1.mainTitleHeroHo:after
+{
+    content: "";
+    animation: revealHo 2s linear 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes revealHo
+{
+    0%
+    {
+        content: "K";
+    }
+
+    10%
+    {
+        content: "KE";
+    }
+
+    20%
+    {
+        content: "KEN";
+    }
+
+    30%
+    {
+        content: "KENK";
+    }
+
+    40%
+    {
+        content: "KENKO";
+    }
+
+    50%
+    {
+        content: "KENKO-";
+    }
+
+    60%
+    {
+        content: "KENKO-H";
+    }
+
+    70%
+    {
+        content: "KENKO-HO";
+    }
+
+    80%
+    {
+        content: "KENKO-HO";
+    }
+
+    100%
+    {
+        content: "KENKO-HO";
+    }
+}
+
+.subTitle
+{
+    font-size: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 992px)
+{
+    .mainTitleHero
+    {
+        font-size: 3.5rem;
+        letter-spacing: 0.5rem;
+    }
+    .subTitle
+    {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px)
+{
+    .mainTitleHero
+    {
+        font-size: 2.5rem;
+        letter-spacing: 0.3rem;
+    }
+    .subTitle
+    {
+        font-size: 1.2rem;
+    }
+}
+/* Section Hero END*/
+
+.waveKenkoHo
+{
+  display:block;
+  width:100%;
+  height:80px;
+  margin-top:-1px;
+  transform: scaleY(-1);
+}
+
+/* Section : Présentation */
+.presentation
+{
+    min-height: 100vh;
+    padding: 200px 0;
+    background-color: var(--or);
+}
+
+.doterra
+{
+    height: 400px;
+    opacity: 20%;
+}
+
+.mainSectionTitle
+{
+    font-size: 2.5em;
+}
+
+.blocTitleCuisine
+{
+  position: relative;
+  display: inline-block;
+}
+
+.blocTitleHo
+{
+  position: relative;
+  display: inline-block;
+}
+
+.line
+{
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background: var(--vert);
+  margin: 10px auto 0;
+}
+
+.line span
+{
+  display: block;
+  width: 70%;
+  height: 4px;
+  background: var(--violet);
+  margin: auto;
+}
+
+.mainSection .doTERRA
+{
+    opacity: 50%;
+}
+
+.bloc1 img
+{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.box
+{
+    background-color: var(--brun) !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    font-size: 1.3em;
+    margin-top: 5%;
+}
+
+.mainSection .myself
+{
+    margin-top: 15%;
+    margin-bottom: 15%;
+    width: 100%;
+}
+/* Section : Présentation END*/
+
+/* Section : Slider */
+.box1
+{
+    background-image: url(../img/kenkoHo/slider/Slider1.jpg);
+}
+
+.box2
+{
+    background-image: url(../img/kenkoHo/slider/Slider2.jpg);
+}
+
+.box3
+{
+    background-image: url(../img/kenkoHo/slider/Slider3.jpg);
+}
+
+.box4
+{
+    background-image: url(../img/kenkoHo/slider/Slider4.jpg);
+    filter: brightness(80%);
+}
+
+.box5
+{
+    background-image: url(../img/kenkoHo/slider/Slider5.jpg);
+}
+
+.box6
+{
+    background-image: url(../img/kenkoHo/slider/Slider6.jpg);
+}
+
+.sliderSection
+{
+    width: 100% !important;
+    max-width: 100 !important;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.fontDastinSliderTitle
+{
+    font-family: "Dastin" !important;
+    color: var(--violet);
+}
+
+.fontDastinDesc
+{
+    font-family: "Dastin";
+    color: var(--orange);
+}
+
+.sliderContent
+{
+    position: relative;
+    width: 100% !important;
+    height: 1200px;
+    margin: 0 auto;
+}
+
+.slide .item
+{
+    width: 100%; /* S'assure que chaque item occupe toute la largeur de son conteneur */
+    height: 100%; /* L'élément prendra la hauteur totale de .sliderContent */
+    background-position: center; /* Centrer l'image */
+    background-size: cover; /* L'image recouvre l'élément sans être déformée */
+}
+
+.sliderContent .slide .item
+{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 20px;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: inline-block;
+    transition: .5s;
+}
+
+.sliderContent .slide .item .content
+{
+    color: var(--beige);
+}
+
+.content
+{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.slide .item:nth-child(1),
+.slide .item:nth-child(2)
+{
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide .item:nth-child(3)
+{
+    left: 50%;
+}
+
+.slide .item:nth-child(4)
+{
+    left: calc(50% + 220px);
+}
+
+.slide .item:nth-child(5)
+{
+    left: calc(50% + 440px);
+}
+
+.slide .item:nth-child(n + 6)
+{
+    left: calc(50% + 660px);
+    opacity: 0;
+}
+
+.item .content
+{
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    width: 300px;
+    text-align: left;
+    color: var(--white);
+    transform: translate(0, -50%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: none;
+}
+
+.slide .item:nth-child(2) .content
+{
+    display: block;
+}
+
+.content .name
+{
+    font-size: 3rem;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+}
+
+.content .description
+{
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+}
+
+@keyframes animate
+{
+    from
+    {
+        opacity: 0;
+        transform:  translate(0, 100px);
+        filter: blur(33px);
+    }
+
+    to
+    {
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}
+
+
+.btn-prev-next
+{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    font-size: 2rem;
+}
+
+/**************/
+/* responsive */
+/**************/
+@media (max-width : 992px)
+{
+    .slider
+    {
+        display: none !important;
+    }
+}
+/* Section : Slider END */
+
+/* Section : Témoignages */
+.commentsBox
+{
+    min-height: 100vh;
+    padding: 200px 0;
+    background-color: var(--or);
+}
+
+.headTestimonials h3
+{
+    font-size: 2rem;
+    color: var(--vert);
+    font-weight: bolder;
+}
+
+#testimonials
+{
+    background-color: var(--grisF);
+    padding: 50px 20px;
+    color: var(--beige);
+    font-size: 1.2em;
+    border-radius: 18px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.rating
+{
+    display: flex;
+    gap: 5px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.rating i
+{
+    color: #ddd;
+    transition: color 0.3s;
+}
+
+.rating i.active,
+.rating i:hover,
+.rating i:hover ~ i
+{
+    color: gold;
+}
+
+textarea
+{
+    padding-top: 2.2rem !important;
+    line-height: 1.5;
+}
+
+textarea::placeholder
+{
+    color: var(--gris) !important;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1rem;
+    opacity: 0.6;
+}
+
+input::placeholder
+{
+    color: var(--gris) !important;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1rem;
+    opacity: 0.6;
+}
+
+/*Caroussel*/
+.carousel-inner
+{
+    text-align: center;
+}
+
+.carousel-item
+{
+    padding: 20px;
+    font-size: italic;
+}
+
+.carousel-item h5
+{
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.custom-control {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+.custom-control:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Section : Témoignages END*/

@@ -3,26 +3,64 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Testimonial;
+use Illuminate\Support\Facades\Log;
 
-class HomeController extends Controller
+class KenkoHoController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
+
+    public function loadPageData($pageName)
     {
-        $this->middleware('auth');
+        $filePath = resource_path("data/{$pageName}Data.php");
+
+        if (!file_exists($filePath)) {
+            abort (404, "Le fichier de données pour {$pageName} est introuvable !");
+        }
+
+        return include $filePath;
     }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
-    public function index()
+    public function show()
     {
-        return view('home');
+        //Inclusion des datas :
+        $data = $this->loadPageData('kenkoHo');
+
+        //Récupération des témoignages depuis la DB :
+        //$testimonialsFromDB = Testimonial::latest()->get(['name', 'comment', 'rating'])->toArray();
+
+        //Fusionner les témoignages :
+        $data['testimonials'] = array_merge(
+            $data['testimonials'] ?? [],
+           // $testimonialsFromDB
+        );
+
+
+        //Passer les paramètres, inclure les fichiers CSS :
+        return view('home', [
+            'kenkoHoData' => $data,
+        ]);
+
+    }
+
+    //Gestion de l'accès à Kenko-Ho :
+    public function checkAccess(Request $request)
+    {
+
+        $code = $request->input('code');
+        $authorizedCode = env('KENKO_ACCESS_CODE', 'Zi35Fs7@');
+
+        if ($code === $authorizedCode) {
+            // Stocke la validation dans la session
+            $request->session()->put('kenko_access', true);
+
+            //Debug
+            Log::info('Session après checkAccess : ', session()->all());
+
+            return response()->json(['status' => 'success']);
+        } else {
+            return response()->json(['status' => 'error'], 403);
+        }
+
     }
 }
+
