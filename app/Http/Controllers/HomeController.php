@@ -6,12 +6,12 @@ use Illuminate\Http\Request;
 use App\Models\Testimonial;
 use Illuminate\Support\Facades\Log;
 
-class KenkoHoController extends Controller
+class HomeController extends Controller
 {
 
     public function loadPageData($pageName)
     {
-        $filePath = resource_path("data/{$pageName}Data.php");
+        $filePath = app_path("Data/{$pageName}.php");
 
         if (!file_exists($filePath)) {
             abort (404, "Le fichier de données pour {$pageName} est introuvable !");
@@ -23,7 +23,7 @@ class KenkoHoController extends Controller
     public function show()
     {
         //Inclusion des datas :
-        $data = $this->loadPageData('kenkoHo');
+        $data = $this->loadPageData('home');
 
         //Récupération des témoignages depuis la DB :
         //$testimonialsFromDB = Testimonial::latest()->get(['name', 'comment', 'rating'])->toArray();
