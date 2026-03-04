@@ -13,9 +13,7 @@
     <section class="heroHo">
         <div class="heroHo-content d-flex justify-content-end">
             <article class="text-center">
-                <h1 class="mainTitleHeroHo">
-
-                </h1>
+                <h1 class="mainTitleHeroHo"></h1>
                 <p class="subTitle text-muted">
                     {{ $kenkoHoData['hero']['sub_Title'] ?? '' }}
                 </p>
