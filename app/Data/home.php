@@ -12,8 +12,8 @@ return [
             "Ce suivi va vous permettre d'apprendre à utiliser et connaître les différentes huiles essentielles en toute simplicité, je serai là pour vous donner toutes les informations nécessaires ainsi que des astuces qui vous guideront sur la voie de l'autonomie et du bien-être.",
             "Avec le Reiki, je pourrai équilibrer la sphère énergétique de votre être, le Reiki est un art mais aussi une philosophie de vie qui a vu le jour au Japon à la fin du XIXe siècle."
         ],
-        'image' => "assets/img/kenkoHo/Chris.jpg",
-        'logo' => "assets/img/kenkoHo/logoDoterra.svg",
+        'image' => "assets/img/home/chris.webp",
+        'logo' => "assets/img/home/logoDoterra.svg",
         'alt_image' => "Photo de moi-même dans un labyrinthe de maïs",
         'themes_title' => "Les thématiques & infos téléchargeables",
         'themes' => [
