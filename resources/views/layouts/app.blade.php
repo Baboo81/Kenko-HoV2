@@ -17,7 +17,7 @@
         <div id="app">
 
             <!-- NAVBAR CUSTOM -->
-            @include('partials.navbar')
+            @include('partials.nav')
             <!-- 👆 tu peux créer un partial pour ta navbar -->
 
             <main class="py-4">
