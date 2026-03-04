@@ -23,33 +23,28 @@ window.addEventListener('scroll', function() {
     }
 });
 
-//---------------------------
-// Kenko-web : cards-popup
-//---------------------------
-function showPopup(popupId) {
-    const popup = document.getElementById(popupId);
-    if (popup) popup.style.display = "flex";
-}
-
-function closePopup(popupId) {
-    const popup = document.getElementById(popupId);
-    if (popup) popup.style.display = "none";
-}
-
 // ----------------------------
-// Kenko-Web : Trust Section : logos animation
+// Zone de progression
 // ----------------------------
-document.addEventListener("DOMContentLoaded", () => {
-    const logos = document.querySelectorAll(".logo");
-    let index = 0;
-    if (logos.length > 0) {
-        setInterval(() => {
-            logos[index].classList.remove("active");
-            index = (index + 1) % logos.length;
-            logos[index].classList.add("active");
-        }, 3000);
-    }
+window.addEventListener('scroll', () => {
+  const circle = document.getElementById('scroll-indicator');
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const scrollPercent = (scrollTop / docHeight) * 100;
+  const color = '#bd8bca';
+  const arrow = document.querySelector('.scroll-arrow');
+
+  circle.style.background = `conic-gradient(${color} ${scrollPercent}%, transparent 0%)`;
+
+  //Mise à jour de la direction de la flèche :
+  if (scrollPercent >= 98) {
+    arrow.innerHTML = '&#8593;'; // flèche vers le haut ↑
+  } else {
+    arrow.innerHTML = '&#x2193;'; // flèche vers le bas ↓
+  }
+
 });
+
 
 // ----------------------------
 // Kenko-Ho : Slider
