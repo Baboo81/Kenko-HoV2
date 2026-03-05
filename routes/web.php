@@ -10,7 +10,7 @@ use Nette\Schema\Elements\Base;
 // =======================
 // ROUTES PRINCIPALES.  //
 // =======================
-Route::get('/', [HomeController::class, 'show'])->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // =======================
 // ROUTES -> THEMES     //

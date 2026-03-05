@@ -8,7 +8,7 @@ abstract class ThemeController extends Controller
 {
     protected function loadPageData($pageName)
     {
-        $filePath = resource_path("data/themes/{$pageName}Data.php");
+        $filePath = app_path("Data/themes/{$pageName}.php");
 
         if (!file_exists($filePath)) {
             abort(404, "Le fichier de données pour {$pageName} est introuvable !");

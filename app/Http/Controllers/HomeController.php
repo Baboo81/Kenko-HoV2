@@ -20,7 +20,7 @@ class HomeController extends Controller
         return include $filePath;
     }
 
-    public function show()
+    public function index()
     {
         //Inclusion des datas :
         $data = $this->loadPageData('home');
@@ -63,4 +63,3 @@ class HomeController extends Controller
 
     }
 }
-

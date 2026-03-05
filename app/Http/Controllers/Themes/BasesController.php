@@ -13,7 +13,7 @@ class BasesController extends ThemeController
 
         //Passer les paramètres, inclure les fichiers CSS :
         return view('themes.bases', [
-            'basesData' => $data,
+            'bases' => $data,
         ]);
 
     }
