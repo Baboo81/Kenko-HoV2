@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title', 'Kenko-Ho | Bien-être au naturel')
+
+@section('meta_description', 'Conseils bien-être, huiles essentielles et santé naturelle.')
+
 @section('content')
  {{-- Div animation : progression de la page --}}
     <div id="scroll-indicator">

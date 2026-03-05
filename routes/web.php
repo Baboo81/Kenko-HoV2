@@ -4,9 +4,19 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TestimonialsController;
+use App\Http\Controllers\Themes\BasesController;
+use Nette\Schema\Elements\Base;
 
-
+// =======================
+// ROUTES PRINCIPALES.  //
+// =======================
 Route::get('/', [HomeController::class, 'show'])->name('home');
+
+// =======================
+// ROUTES -> THEMES     //
+// =======================
+
+Route::get('themes/bases', [BasesController::class, 'show'])->name('themes.bases');
 
 //Route pour envoyer un témoignage (POST)
 Route::post('/testimonials', [TestimonialsController::class, 'store'])->name('testimonials.store');

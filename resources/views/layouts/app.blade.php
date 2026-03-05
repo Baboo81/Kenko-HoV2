@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Kenko-Web | Agence web & développement web')</title>
-    <meta name="description" content="@yield('meta_description', 'Développement web sur mesure avec Laravel, SEO et performance.')">
+    <title>@yield('title', 'Kenko-Ho')</title>
+    <meta name="description" content="@yield('meta_description', 'Site dédié au bien-être & aux huiles essentielles')">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     {{-- favicon --}}
@@ -20,6 +20,7 @@
     <!-- Canonical -->
     <link rel="canonical" href="{{ url()->current() }}">
 
+    <meta name="robots" content="index, follow">
     <!-- Open Graph / Twitter -->
     <meta property="og:title" content="@yield('title')">
     <meta property="og:description" content="@yield('meta_description')">
