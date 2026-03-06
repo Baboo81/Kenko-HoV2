@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Themes;
+namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 

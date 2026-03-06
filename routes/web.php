@@ -16,7 +16,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 // ROUTES -> THEMES     //
 // =======================
 
-Route::get('/bases', [BasesController::class, 'show'])->name('themes.bases');
+Route::get('/themes/bases', [BasesController::class, 'show'])->name('themes.bases');
 
 //Route pour envoyer un témoignage (POST)
 Route::post('/testimonials', [TestimonialsController::class, 'store'])->name('testimonials.store');

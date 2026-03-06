@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Themes;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\ThemeController;
+
 
 class BasesController extends ThemeController
 {
@@ -13,7 +15,7 @@ class BasesController extends ThemeController
 
         //Passer les paramètres, inclure les fichiers CSS :
         return view('themes.bases', [
-            'bases' => $data,
+            'basesData' => $data,
         ]);
 
     }

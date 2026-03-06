@@ -16,7 +16,7 @@ return [
     'guides_intro' => "Ci-dessous, vous trouverez différents guides qui vous donneront des conseils pour rester en santé.",
 
     'image' => [
-        'src' => "/../assets/img/kenkoHo/pageLesBonnesBases/lesBonnesBases.jpg",
+        'src' => "/../assets/img/home/pageLesBonnesBases/lesBonnesBases.webp",
         'alt' => "Image représentant une personne en pleine santé",
     ],
 
