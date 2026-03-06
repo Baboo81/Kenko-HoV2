@@ -61,7 +61,7 @@
 
                     {{-- Bouton retour --}}
                     <div class="text-center mt-auto">
-                        <button onclick="window.location.href='/kenko-ho';" class="button">
+                        <button onclick="window.location.href='/';" class="button">
                             Retourner vers Kenko-Ho
                         </button>
                     </div>
