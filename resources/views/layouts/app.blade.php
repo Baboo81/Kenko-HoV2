@@ -46,8 +46,8 @@
            'resources/css/nav.css',
            'resources/css/footer.css',
            'resources/css/home.css',
-           'resources/css/themes/bases.css'
-           'resources/css/themes/dixHuiles.css'
+           'resources/css/themes/bases.css',
+           'resources/css/themes/dixHuiles.css',
            'resources/css/contact.css',
            'resources/css/qui-suis-je.css',
            'resources/css/faq.css',
@@ -58,7 +58,8 @@
            'resources/js/main.js',
            'resources/js/gtm.js',
            'resources/js/klaro-gtm.js',
-           'resources/js/app.js'])
+           'resources/js/app.js'
+           ])
 
     {{-- Styles spécifiques --}}
     @stack('styles')
