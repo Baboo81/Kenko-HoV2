@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DixHuilesController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
@@ -17,6 +18,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 // =======================
 
 Route::get('/themes/bases', [BasesController::class, 'show'])->name('themes.bases');
+Route::get('/themes/dixHuiles', [DixHuilesController::class, 'show'])->name('themes.dixHuiles');
 
 //Route pour envoyer un témoignage (POST)
 Route::post('/testimonials', [TestimonialsController::class, 'store'])->name('testimonials.store');
