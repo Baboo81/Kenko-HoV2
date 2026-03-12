@@ -50,6 +50,7 @@
            'resources/css/themes/dixHuiles.css',
            'resources/css/themes/cuisine.css',
            'resources/css/themes/douleurs.css',
+           'resources/css/themes/emotions.css',
            'resources/css/contact.css',
            'resources/css/qui-suis-je.css',
            'resources/css/faq.css',
