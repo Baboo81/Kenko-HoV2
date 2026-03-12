@@ -51,6 +51,7 @@
            'resources/css/themes/cuisine.css',
            'resources/css/themes/douleurs.css',
            'resources/css/themes/emotions.css',
+           'resources/css/themes/enfants.css',
            'resources/css/contact.css',
            'resources/css/qui-suis-je.css',
            'resources/css/faq.css',

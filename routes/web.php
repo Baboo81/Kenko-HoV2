@@ -9,6 +9,7 @@ use App\Http\Controllers\Themes\BasesController;
 use App\Http\Controllers\Themes\CuisineController;
 use App\Http\Controllers\Themes\DouleursController;
 use App\Http\Controllers\Themes\EmotionsController;
+use App\Http\Controllers\Themes\EnfantsController;
 use Nette\Schema\Elements\Base;
 
 // =======================
@@ -25,6 +26,7 @@ Route::get('/themes/dixHuiles', [DixHuilesController::class, 'show'])->name('the
 Route::get('/themes/cuisine', [CuisineController::class, 'show'])->name('themes.cuisine');
 Route::get('/themes/douleurs', [DouleursController::class, 'show'])->name('themes.douleurs');
 Route::get('/themes/emotions', [EmotionsController::class, 'show'])->name('thmes.emotions');
+Route::get('/themes/enfants', [EnfantsController::class, 'show'])->name('themes.enfants');
 
 //Route pour envoyer un témoignage (POST)
 Route::post('/testimonials', [TestimonialsController::class, 'store'])->name('testimonials.store');
