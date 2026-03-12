@@ -10,6 +10,7 @@ use App\Http\Controllers\Themes\CuisineController;
 use App\Http\Controllers\Themes\DouleursController;
 use App\Http\Controllers\Themes\EmotionsController;
 use App\Http\Controllers\Themes\EnfantsController;
+use App\Http\Controllers\Themes\MicrobiomeController;
 use App\Http\Controllers\Themes\PeauController;
 use Nette\Schema\Elements\Base;
 
@@ -29,6 +30,7 @@ Route::get('/themes/douleurs', [DouleursController::class, 'show'])->name('theme
 Route::get('/themes/emotions', [EmotionsController::class, 'show'])->name('thmes.emotions');
 Route::get('/themes/enfants', [EnfantsController::class, 'show'])->name('themes.enfants');
 Route::get('/themes/peau', [PeauController::class, 'show'])->name('themes.peau');
+Route::get('/themes/microbiome', [MicrobiomeController::class, 'show'])->name('themes.microbiome');
 
 //Route pour envoyer un témoignage (POST)
 Route::post('/testimonials', [TestimonialsController::class, 'store'])->name('testimonials.store');
