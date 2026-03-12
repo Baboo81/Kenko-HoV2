@@ -17,7 +17,7 @@ return [
         'alt_image' => "Photo de moi-même dans un labyrinthe de maïs",
         'themes_title' => "Les thématiques & infos téléchargeables",
         'themes' => [
-            ['label' => "Les 10 huiles de bases", 'url' => "/themes/dix-huiles"],
+            ['label' => "Les 10 huiles de bases", 'url' => "/themes/dixHuiles"],
             ['label' => "Les émotions & les H.E", 'url' => "/themes/emotions"],
             ['label' => "Les enfants & les H.E", 'url' => "/themes/enfants"],
             ['label' => "Le Microbiome", 'url' => "/themes/microbiome"],

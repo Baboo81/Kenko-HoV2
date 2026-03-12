@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Themes;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\ThemeController;
 
-class DixHuilesController extends Controller
+class DixHuilesController extends ThemeController
 {
     public function show()
     {
@@ -13,7 +14,7 @@ class DixHuilesController extends Controller
 
         //Afficher la vue :
         return view('themes.dixHuiles', [
-            'dixHuiles' => $data,
+            'dixHuilesData' => $data,
         ]);
 
     }

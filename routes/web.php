@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\DixHuilesController;
+use App\Http\Controllers\Themes\DixHuilesController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
