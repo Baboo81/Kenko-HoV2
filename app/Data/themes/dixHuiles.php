@@ -14,7 +14,7 @@ return [
                 "Photosensibilisant.",
             ],
             'types' => ['T', 'D'],
-            'img' => "/assets/img/kenkoHo/pageDixHuiles/Air.jpg",
+            'img' => "/assets/img/home/pageDixHuiles/air.webp",
         ],
 
         'menthe_poivree' => [
@@ -26,7 +26,7 @@ return [
                 "En diffusion : 2 gttes pour retrouver optimisme, vivacité et joie",
             ],
             'types' => ['I', 'T', 'D'],
-            'img' => "/assets/img/kenkoHo/pageDixHuiles/MenthePoivrée.jpg",
+            'img' => "/assets/img/home/pageDixHuiles/menthePoivrée.webp",
         ],
 
         'on_guard' => [
@@ -40,7 +40,7 @@ return [
             ],
             'types' => ['I', 'T', 'D'],
             'danger' => "Photosensibilisant, dermocaustique.",
-            'img' => "/assets/img/kenkoHo/pageDixHuiles/OnGuard.jpg",
+            'img' => "/assets/img/home/pageDixHuiles/onGuard.webp",
         ],
 
         'origan' => [
@@ -53,7 +53,7 @@ return [
             ],
             'types' => ['I', 'T', 'D'],
             'danger' => "Dermocaustique à diluer impérativement.",
-            'img' => "/assets/img/kenkoHo/pageDixHuiles/Origan.jpg",
+            'img' => "/assets/img/home/pageDixHuiles/origan.webp",
         ],
 
         'zen_gest' => [
@@ -66,7 +66,7 @@ return [
                 "En interne, 2 gttes dans de l\'eau chaude en dessous de 60°C pour améliorer la digestion après un repas copieux ou trop arrosé.",
             ],
             'types' => ['I', 'T', 'D'],
-            'img' => "/assets/img/kenkoHo/pageDixHuiles/ZenGest.jpg",
+            'img' => "/assets/img/home/pageDixHuiles/zenGest.webp",
         ],
 
         'lavande' => [
@@ -78,7 +78,7 @@ return [
                 "Efficace contre les inconforts saisonniers en association avec la menthe poivrée et le citron.",
             ],
             'types' => ['I', 'T', 'D'],
-            'img' => "/assets/img/kenkoHo/pageDixHuiles/Lavande.jpg",
+            'img' => "/assets/img/home/pageDixHuiles/lavande.webp",
         ],
 
         'deep_blue' => [
@@ -91,7 +91,7 @@ return [
             ],
             'types' => ['T', 'D'],
             'danger' => "À éviter s'il y a des allergies aux salicylés (aspirine).",
-            'img' => "/assets/img/kenkoHo/pageDixHuiles/DeepBlue.jpg",
+            'img' => "/assets/img/home/pageDixHuiles/deepBlue.webp",
         ],
 
         'encens' => [
@@ -103,7 +103,7 @@ return [
                 "En interne : 1 gtte en bouche pour un effet relaxant.",
             ],
             'types' => ['I', 'T', 'D'],
-            'img' => "/assets/img/kenkoHo/pageDixHuiles/Encens.jpg",
+            'img' => "/assets/img/home/pageDixHuiles/encens.webp",
         ],
 
         'tea_tree' => [
@@ -115,7 +115,7 @@ return [
             ],
             'types' => ['I', 'T', 'D'],
             'danger' => "En diffusion : à proscrire en présence de chats.",
-            'img' => "/assets/img/kenkoHo/pageDixHuiles/TeaTree.jpg",
+            'img' => "/assets/img/home/pageDixHuiles/teaTree.webp",
         ],
 
         'citron' => [
@@ -128,7 +128,7 @@ return [
             ],
             'types' => ['I', 'T', 'D'],
             'danger' => "Photosensibilisant.",
-            'img' => "/assets/img/kenkoHo/pageDixHuiles/Citron.jpg",
+            'img' => "/assets/img/home/pageDixHuiles/citron.webp",
         ],
     ],
 

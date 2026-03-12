@@ -94,7 +94,7 @@
             </div>
 
             <div class="text-center mt-auto">
-                <button onclick="window.location.href='/kenko-ho';" class="button">Retourner vers Kenko-Ho</button>
+                <button onclick="window.location.href='/';" class="button">Retourner vers Kenko-Ho</button>
             </div>
         </div>
     </section>
