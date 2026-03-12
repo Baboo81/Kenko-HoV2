@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TestimonialsController;
 use App\Http\Controllers\Themes\BasesController;
+use App\Http\Controllers\Themes\CuisineController;
 use Nette\Schema\Elements\Base;
 
 // =======================
@@ -19,6 +20,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/themes/bases', [BasesController::class, 'show'])->name('themes.bases');
 Route::get('/themes/dixHuiles', [DixHuilesController::class, 'show'])->name('themes.dixHuiles');
+Route::get('/themes/cuisine', [CuisineController::class, 'show'])->name('thems.cuisine');
 
 //Route pour envoyer un témoignage (POST)
 Route::post('/testimonials', [TestimonialsController::class, 'store'])->name('testimonials.store');
