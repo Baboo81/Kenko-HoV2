@@ -267,7 +267,7 @@ h1.mainTitleHeroHo:after
     pointer-events: none;
 }
 
-/*@keyframes glitter {
+@keyframes glitter {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
@@ -277,7 +277,7 @@ h1.mainTitleHeroHo:after
     0% { opacity: 0.1; }
     50% { opacity: 0.25; }
     100% { opacity: 0.1; }
-}*/
+}
 
 .subTitle
 {
@@ -388,10 +388,17 @@ h1.mainTitleHeroHo:after
     margin-top: 5%;
 }
 
-.mainSection .myself
+section .myself
 {
     margin-top: 15%;
     margin-bottom: 15%;
+}
+
+.myself img
+{
+    transform: rotate(90deg);
+    max-width: 550px;
+    height: auto;
     width: 100%;
 }
 /* Section : Présentation END*/

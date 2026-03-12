@@ -67,16 +67,15 @@
                     </div>
 
                     {{-- Texte + Image --}}
-                    <section
-                        class="d-flex flex-column-reverse flex-md-row align-items-center justify-content-center myself my-5">
-                        <article class="col-md-6 my-5">
+                    <section class="d-flex flex-column-reverse flex-md-row align-items-center justify-content-center myself my-5">
+                        <article class="col-md-7 my-5">
                             <div class="box text-center rounded-5 p-5">
                                 @foreach ($kenkoHoData['presentation']['paragraphs'] as $paragraph)
                                     <p class="text-muted my-2">{{ $paragraph }}</p>
                                 @endforeach
                             </div>
                         </article>
-                        <div class="col-md-6 mx-5 my-3">
+                        <div class="col-md-5 myself mx-5 my-3">
                             <img src="{{ asset($kenkoHoData['presentation']['image']) ?? '' }}"
                                 alt="{{ $kenkoHoData['presentation']['alt_image'] ?? '' }}" class="img-fluid rounded-5">
                         </div>
