@@ -54,6 +54,8 @@
            'resources/css/themes/enfants.css',
            'resources/css/themes/peau.css',
            'resources/css/themes/microbiome.css',
+           'resources/css/themes/sommeil.css',
+           'resources/css/themes/reiki.css',
            'resources/css/contact.css',
            'resources/css/qui-suis-je.css',
            'resources/css/faq.css',
