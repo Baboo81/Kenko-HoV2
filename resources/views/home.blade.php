@@ -17,8 +17,8 @@
     <section class="heroHo">
         <div class="heroHo-content d-flex justify-content-end">
             <article class="text-center">
-                <h1 class="mainTitleHeroHo glitter-title"></h1>
-                <p class="subTitle text-muted">
+                <h1 class="mainTitleHeroHo"></h1>
+                <p class="subTitle">
                     {{ $kenkoHoData['hero']['sub_Title'] ?? '' }}
                 </p>
             </article>
@@ -29,7 +29,7 @@
     <!-- SVG WAVE -->
     <svg class="waveKenkoHo" viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true" role="img">
-        <path d="M0,32 C200,120 400,0 720,48 C1040,96 1240,0 1440,48 L1440 120 L0 120 Z" fill="#e3c7af"></path>
+        <path d="M0,32 C200,120 400,0 720,48 C1040,96 1240,0 1440,48 L1440 120 L0 120 Z" fill="#FFFFF0"></path>
     </svg>
 
     {{-- Section : Présentation --}}
@@ -60,18 +60,18 @@
             <div class="row">
                 <div class="bloc1 text-center my-5">
                     <div class="blocTitleHo my-5">
-                        <h2 class="text-muted text-center my-3">
+                        <h2 class="text-center my-3">
                             {{ $kenkoHoData['presentation']['title'] ?? '' }}
                         </h2>
                         <div class="line my-2"><span></span></div>
                     </div>
 
                     {{-- Texte + Image --}}
-                    <section class="d-flex flex-column-reverse flex-md-row align-items-center justify-content-center myself my-5">
+                    <section class="bloc2 d-flex flex-column-reverse flex-md-row align-items-center justify-content-center myself my-5">
                         <article class="col-md-7 my-5">
                             <div class="box text-center rounded-5 p-5">
                                 @foreach ($kenkoHoData['presentation']['paragraphs'] as $paragraph)
-                                    <p class="text-muted my-2">{{ $paragraph }}</p>
+                                    <p class="fontBeige my-2">{{ $paragraph }}</p>
                                 @endforeach
                             </div>
                         </article>
@@ -87,7 +87,7 @@
             <div class="row">
                 <div class="bloc1 text-center">
                     <div class="blocTitleHo my-5">
-                        <h2 class="text-muted text-center my-3">
+                        <h2 class="text-center my-3">
                             {{ $kenkoHoData['presentation']['themes_title'] ?? '' }}
                         </h2>
                         <div class="line my-2"><span></span></div>
@@ -146,7 +146,7 @@
     <div class="row">
         <div class="bloc1 text-center my-5">
             <div class="blocTitleHo my-5">
-                <h2 class="text-muted text-center my-3">
+                <h2 class="text-center my-3">
                     {{ $kenkoHoData['testimonials_title'] ?? '' }}
                 </h2>
                 <div class="line my-2"><span></span></div>

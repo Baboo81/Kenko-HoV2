@@ -40,7 +40,7 @@
     </div>
 
     <div class="footer-bottom">
-        <p>&copy; Kenko-web - 2025</p>
+        <p>&copy; 2025 <a href="https://www.kenko-web.be" target="_blank" rel="noopener noreferrer">Kenko-Ho</a> | Développé par Kenko-Web </p>
     </div>
 </footer>
 

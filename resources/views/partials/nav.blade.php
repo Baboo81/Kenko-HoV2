@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg sticky-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{ route('home') }}">
             <img src="{{ asset('assets/img/logo/Tsukiboshimon.svg') }}" alt="Logo du site Kenko-Ho, ce symbole s'appel : Tsukiboshimon" height="80">
@@ -27,16 +27,16 @@
                         Thèmes
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Bases nutritionnelles</a></li>
-                        <li><a class="dropdown-item" href="#">Cuisine</a></li>
-                        <li><a class="dropdown-item" href="#">Les 10 huiles de base</a></li>
-                        <li><a class="dropdown-item" href="#">La douleur</a></li>
-                        <li><a class="dropdown-item" href="#">Les émotions</a></li>
-                        <li><a class="dropdown-item" href="#">Les enfants</a></li>
-                        <li><a class="dropdown-item" href="#">Le microbiome</a></li>
-                        <li><a class="dropdown-item" href="#">La peau</a></li>
-                        <li><a class="dropdown-item" href="#">Le sommeil</a></li>
-                        <li><a class="dropdown-item" href="#">Le Reiki</a></li>
+                        <li><a class="dropdown-item" href="{{ route('themes.bases') }}">Bases nutritionnelles</a></li>
+                        <li><a class="dropdown-item" href="{{ route('themes.cuisine') }}">Cuisine</a></li>
+                        <li><a class="dropdown-item" href="{{ route('themes.dixHuiles') }}">Les 10 huiles de base</a></li>
+                        <li><a class="dropdown-item" href="{{ route('themes.douleurs') }}">La douleur</a></li>
+                        <li><a class="dropdown-item" href="{{ route('thmes.emotions') }}">Les émotions</a></li>
+                        <li><a class="dropdown-item" href="{{ route('themes.enfants') }}">Les enfants</a></li>
+                        <li><a class="dropdown-item" href="{{ route('themes.microbiome') }}">Le microbiome</a></li>
+                        <li><a class="dropdown-item" href="{{ route('themes.peau') }}">La peau</a></li>
+                        <li><a class="dropdown-item" href="{{ route('themes.sommeil') }}">Le sommeil</a></li>
+                        <li><a class="dropdown-item" href="{{ route('themes.reiki') }}">Le Reiki</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
