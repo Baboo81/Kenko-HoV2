@@ -1,3 +1,52 @@
 
+/**
+    Bootstrap
+*/
+
 @import 'bootstrap/dist/css/bootstrap.min.css';
 @import 'bootstrap-icons/font/bootstrap-icons.css';
+
+/**
+    Reset
+*/
+
+@import './reset.css';
+
+/**
+    Partials
+*/
+
+@import './nav.css';
+@import './footer.css';
+
+/**
+    Pages principales
+*/
+
+@import './home.css';
+@import './qui-suis-je.css';
+@import './contact.css';
+@import './faq.css';
+
+/**
+    Pages à thèmes
+*/
+
+@import './themes/bases.css';
+@import './themes/dixHuiles.css';
+@import './themes/cuisine.css';
+@import './themes/douleurs.css';
+@import './themes/emotions.css';
+@import './themes/enfants.css';
+@import './themes/peau.css';
+@import './themes/microbiome.css';
+@import './themes/sommeil.css';
+@import './themes/reiki.css';
+
+/**
+    Cookies
+*/
+
+/**
+    Error 404
+*/

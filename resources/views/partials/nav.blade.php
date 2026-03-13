@@ -1,6 +1,8 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-        <a class="navbar-brand" href="{{ route('home') }}">Kenko-Ho</a>
+        <a class="navbar-brand" href="{{ route('home') }}">
+            <img src="{{ asset('assets/img/logo/Tsukiboshimon.svg') }}" alt="Logo du site Kenko-Ho, ce symbole s'appel : Tsukiboshimon" height="80">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

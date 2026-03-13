@@ -33,8 +33,6 @@
     <meta name="twitter:description" content="@yield('meta_description')">
     <meta name="twitter:image" content="{{ asset('assets/img/og-image.jpg') }}">
 
-    {{-- Bootstrap CSS --}}
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 
@@ -43,29 +41,6 @@
 
     {{-- Vite --}}
     @vite(['resources/css/app.css',
-           'resources/css/nav.css',
-           'resources/css/footer.css',
-           'resources/css/home.css',
-           'resources/css/themes/bases.css',
-           'resources/css/themes/dixHuiles.css',
-           'resources/css/themes/cuisine.css',
-           'resources/css/themes/douleurs.css',
-           'resources/css/themes/emotions.css',
-           'resources/css/themes/enfants.css',
-           'resources/css/themes/peau.css',
-           'resources/css/themes/microbiome.css',
-           'resources/css/themes/sommeil.css',
-           'resources/css/themes/reiki.css',
-           'resources/css/contact.css',
-           'resources/css/qui-suis-je.css',
-           'resources/css/faq.css',
-           'resources/css/reset.css',
-           'resources/css/cookies-policy.css',
-           'resources/css/cookies-banner.css',
-           'resources/css/error.css',
-           'resources/js/main.js',
-           'resources/js/gtm.js',
-           'resources/js/klaro-gtm.js',
            'resources/js/app.js'
            ])
 
@@ -85,11 +60,6 @@
     {{-- Footer --}}
     @include('partials.footer')
 
-    {{-- Bootstrap JS --}}
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    {{-- Lucide --}}
-    <script src="https://unpkg.com/lucide@latest"></script>
 
     {{-- Leaflet JS --}}
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
