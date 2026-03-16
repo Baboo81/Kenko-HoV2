@@ -17,12 +17,16 @@
 :root
 {
     --vert : #536964;
+    --violet : #bd8bca;
+    --orange : #e47c3c;
     --grisF : #8b9cb6;
     --gris : #bfc1c2;
+    --or : #FFFFF0;
     --beige : #f1efe9;
     --brun : #e3c7af;
     --noir : #282828;
 }
+
 
 html, body
 {
@@ -33,3 +37,46 @@ html, body
     min-height: 500px;
     min-width: 320px;
 }
+
+.bases
+{
+    min-height: 1500px;
+    margin-top: 10%;
+    padding: 100px 0px;
+}
+
+.bases p
+{
+    color: white;
+    line-height: 1.8rem;
+}
+
+.mainTitleContent
+{
+    position: relative;
+}
+
+.blocTitleEnfants
+{
+  position: relative;
+  display: inline-block;
+}
+
+.line
+{
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background: var(--vert);
+  margin: 10px auto 0;
+}
+
+.line span
+{
+  display: block;
+  width: 70%;
+  height: 4px;
+  background: var(--violet);
+  margin: auto;
+}
+

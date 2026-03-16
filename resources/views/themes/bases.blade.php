@@ -5,7 +5,7 @@
 @section('meta_description', 'Conseils bien-être, huiles essentielles et santé naturelle.')
 
 @section('content')
-    <section class="mainSection">
+    <section class="bases">
         <div class="container">
             {{-- Titre principal --}}
             <div class="row">
@@ -23,22 +23,22 @@
                     <div class="box rounded-5 p-5 my-5">
                         <div class="row">
                             {{-- Texte + liste --}}
-                            <article class="col-md-6">
-                                <p class="text-muted text-center">{{ $basesData['intro'] }}</p>
+                            <article class="col-md-8">
+                                <p class="text-center">{{ $basesData['intro'] }}</p>
                                 <ul class="mx-5">
                                     @foreach ($basesData['pillars'] as $pillar)
-                                        <li class="my-3 fs-3 fontBeige">{{ $pillar }}</li>
+                                        <li class="my-3 fs-4 fontBeige">{{ $pillar }}</li>
                                     @endforeach
                                 </ul>
 
-                                <div class="text-center my-4">
+                                <div class="text-center my-5">
                                     <h3>{{ $basesData['guides_title'] }}</h3>
                                 </div>
-                                <p class="text-muted text-center mb-3">{{ $basesData['guides_intro'] }}</p>
+                                <p class="text-center mb-3">{{ $basesData['guides_intro'] }}</p>
                             </article>
 
                             {{-- Image --}}
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <img class="img-fluid rounded-4" src="{{ $basesData['image']['src'] }}"
                                     alt="{{ $basesData['image']['alt'] }}" style="width: 30em;">
                             </div>

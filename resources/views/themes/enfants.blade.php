@@ -18,23 +18,23 @@
                 <div class="row align-items-center">
 
                     {{-- IMAGE EN PREMIER SUR MOBILE ET TABLETTE --}}
-                    <div class="col-md-6 my-3 text-center order-1 order-md-1 order-lg-2">
+                    <div class="col-md-4 my-3 text-center order-1 order-md-1 order-lg-2">
                         <img class="img-fluid rounded-4"
                              src="{{ $enfantsData['image']['src'] }}"
                              alt="{{ $enfantsData['image']['alt'] }}">
                     </div>
 
                     {{-- TEXTE EN DEUXIÈME SUR MOBILE/TABLETTE, PREMIER SUR DESKTOP --}}
-                    <article class="col-md-6 text-center order-2 order-md-2 order-lg-1">
+                    <article class="col-md-8 text-center order-2 order-md-2 order-lg-1">
                         @foreach ($enfantsData['intro'] as $paragraph)
-                            <p class="text-muted">{{ $paragraph }}</p>
+                            <p class="">{{ $paragraph }}</p>
                         @endforeach
 
-                        <div class="text-center my-4">
+                        <div class="text-center my-5">
                             <h3>{{ $enfantsData['guide_title'] }}</h3>
                         </div>
 
-                        <p class="text-muted mb-3">{{ $enfantsData['guide_text'] }}</p>
+                        <p class="mb-3">{{ $enfantsData['guide_text'] }}</p>
                     </article>
 
                 </div>
