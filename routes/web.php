@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Themes\DixHuilesController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -22,6 +23,8 @@ use Nette\Schema\Elements\Base;
 // =======================
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/qui-suis-je', [QuiSuisJeController::class, 'show'])->name('qui-suis-je');
+Route::get('/contact', [ContactController::class, 'show'])->name('contact.show');
+Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
 
 // =======================
 // ROUTES -> THEMES     //
