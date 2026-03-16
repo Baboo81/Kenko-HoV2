@@ -50,11 +50,11 @@
 
                 @guest
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">Connexion</a>
+                        <a class="nav-link {{ request()->routeIs('login') ? 'active' : '' }}" href="{{ route('login') }}">Connexion</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('register') }}">Inscription</a>
+                        <a class="nav-link {{ request()->routeIs('register') ? 'active' : '' }}" href="{{ route('register') }}">Inscription</a>
                     </li>
                 @endguest
 
@@ -62,8 +62,8 @@
                 @auth
 
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('dashboard') }}">
-                            Dashboard
+                        <a class="nav-link" href="{{ route('home') }}">
+                            Home
                         </a>
                     </li>
 

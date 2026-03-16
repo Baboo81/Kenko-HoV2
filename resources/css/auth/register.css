@@ -55,6 +55,11 @@ p
     font-size: 1.5rem;
 }
 
+.fontViolet
+{
+    color: var(--violet);
+}
+
 /* BTN */
 button, .button
 {
@@ -91,3 +96,33 @@ button:hover, .button:hover
     }
 }
 /* BTN END*/
+
+.register
+{
+    padding: 200px 0;
+}
+
+/* Surlignage */
+.blocTitleHo
+{
+  position: relative;
+  display: inline-block;
+}
+
+.line
+{
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background: var(--vert);
+  margin: 10px auto 0;
+}
+
+.line span
+{
+  display: block;
+  width: 70%;
+  height: 4px;
+  background: var(--violet);
+  margin: auto;
+}

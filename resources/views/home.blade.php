@@ -17,6 +17,13 @@
     <section class="heroHo">
         <div class="heroHo-content d-flex justify-content-end">
             <article class="text-center">
+                <div class="text-center userName my-5">
+                    @auth
+                        Bonjour <strong>{{ Auth::user()->name }}</strong>
+                    @else
+                        Binvenue sur Kenko-Ho
+                    @endauth
+                </div>
                 <h1 class="mainTitleHeroHo"></h1>
                 <p class="subTitle">
                     {{ $kenkoHoData['hero']['sub_Title'] ?? '' }}

@@ -6,15 +6,15 @@
 
 @section('content')
 
-    <section class="contact my-5">
-
+    <section class="register my-5">
         <div class="container">
-
-            <h1 class="text-center text-muted mb-5 titleH1 fs-2">
-                Créer votre compte
-            </h1>
-
-            <div class="row align-items-center g-5">
+            <div class="row align-items-center justify-content-center g-5">
+                <div class="blocTitleHo my-5">
+                    <h1 class="text-center fontViolet fs-2">
+                        Créer votre compte
+                    </h1>
+                    <div class="line my-2"><span></span></div>
+                </div>
 
                 {{-- Formulaire --}}
 
@@ -166,9 +166,7 @@
                 </div>
 
             </div>
-
         </div>
-
     </section>
 
 @endsection
