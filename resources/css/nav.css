@@ -95,7 +95,7 @@ nav .dropdown-menu
     display: block;
     max-height: 0;
     overflow: hidden;
-    background-color: var(--beige);
+    background-color: var(--grisF);
     border-radius: 10px;
     font-size: 1.7em;
     width: 20rem;
@@ -104,6 +104,16 @@ nav .dropdown-menu
     transform-origin: top;
     transition: transform 0.3s ease-out, max-height 0.3s ease-out, opacity 0.3s ease-out;
     opacity: 0;
+}
+
+nav .dropdown-item
+{
+    color: var(--beige);
+}
+
+hr
+{
+    background-color: var(--beige) !important;
 }
 
 nav .dropdown-menu.show

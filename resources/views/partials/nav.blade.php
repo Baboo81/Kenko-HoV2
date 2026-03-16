@@ -26,7 +26,7 @@
                         aria-expanded="false">
                         Thèmes
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu rounded-4">
                         <li><a class="dropdown-item" href="{{ route('themes.bases') }}">Bases nutritionnelles</a></li>
                         <li><a class="dropdown-item" href="{{ route('themes.cuisine') }}">Cuisine</a></li>
                         <li><a class="dropdown-item" href="{{ route('themes.dixHuiles') }}">Les 10 huiles de base</a></li>
