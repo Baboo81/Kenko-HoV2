@@ -31,7 +31,7 @@
                             <img src="{{ asset('assets/img/logo/Tsukiboshimon.svg') }}" alt="Logo Kenko-Ho"
                                 style="max-height:180px;">
 
-                            <p class="text-muted mt-2">
+                            <p class="fontOrange mt-2">
                                 Rejoignez l'univers Kenko-Ho
                             </p>
 

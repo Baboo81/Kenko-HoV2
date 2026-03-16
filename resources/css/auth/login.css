@@ -60,6 +60,7 @@ p
     color: var(--violet);
 }
 
+
 /* BTN */
 button, .button
 {
@@ -125,4 +126,9 @@ button:hover, .button:hover
 .login
 {
     padding: 200px 0;
+}
+
+label
+{
+    color: var(--violet);
 }

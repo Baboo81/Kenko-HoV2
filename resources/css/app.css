@@ -49,6 +49,7 @@
 
 @import './auth/login.css';
 @import './auth/register.css';
+@import './auth/forgot-password.css';
 
 /**
     Cookies

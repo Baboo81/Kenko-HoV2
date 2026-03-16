@@ -97,7 +97,7 @@
 
                                 <input class="form-check-input" type="checkbox" name="remember" id="remember">
 
-                                <label class="form-check-label" for="remember">
+                                <label class="form-check-label mt-1" for="remember">
                                     Se souvenir de moi
                                 </label>
 
@@ -114,7 +114,7 @@
                             @if (Route::has('password.request'))
                                 <div class="text-center">
 
-                                    <a href="{{ route('password.request') }}" class="text-decoration-none">
+                                    <a href="{{ route('password.request') }}" class="text-decoration-none fontViolet">
                                         Mot de passe oublié ?
                                     </a>
 
