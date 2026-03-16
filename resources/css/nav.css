@@ -73,8 +73,8 @@ nav .nav-item
 
 .navbar a.active
 {
-    color: var(--vert);
-    font-weight: bold;
+    color: var(--violet) !important;
+    font-weight: bold !important;
 }
 
 nav .nav-link
@@ -95,7 +95,10 @@ nav .dropdown-menu
     display: block;
     max-height: 0;
     overflow: hidden;
-    background-color: var(--grisF);
+    transition: 2.6s ease;
+    background-color: rgba(245, 235, 220, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); /* compatibilité Safari */
     border-radius: 10px;
     font-size: 1.7em;
     width: 20rem;
@@ -108,7 +111,7 @@ nav .dropdown-menu
 
 nav .dropdown-item
 {
-    color: var(--beige);
+    color: var(--violet);
 }
 
 hr

@@ -44,6 +44,13 @@
 @import './themes/reiki.css';
 
 /**
+    Auth
+*/
+
+@import './auth/login.css';
+@import './auth/register.css';
+
+/**
     Cookies
 */
 
