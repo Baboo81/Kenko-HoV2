@@ -36,9 +36,19 @@ html, body
     min-width: 320px;
 }
 
+h2
+{
+    font-size: clamp(1.8rem, 2.2vw + 1rem, 2.8rem) !important;
+}
+
+p
+{
+    line-height: 1.3em;
+}
+
 .titleH1
 {
-    color: var(--vert) !important;
+    color: var(--orange) !important;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
 }
 
@@ -63,6 +73,36 @@ html, body
     background-position: center;
     background-color: var(--brun);
     position: relative; /*pour les ajustements*/
+}
+
+.title-qui-suis-je
+{
+    color: var(--violet);
+}
+
+/* Surlignage */
+.blocTitleHo
+{
+  position: relative;
+  display: inline-block;
+}
+
+.line
+{
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background: var(--vert);
+  margin: 10px auto 0;
+}
+
+.line span
+{
+  display: block;
+  width: 70%;
+  height: 4px;
+  background: var(--violet);
+  margin: auto;
 }
 
 .whoIam img

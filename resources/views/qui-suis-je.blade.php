@@ -32,16 +32,20 @@
     {{-- Section : Qui suis-je ? --}}
     <section class="quiSuisJe my-5">
         <div class="container">
-            @foreach ($kenkoHoData['sections'] as $section)
-                <div class="my-5">
-                    <h1 class="text-center titleH1 my-5 fs-1 fontBlack">
-                        {{ $section['title'] }}
-                    </h1>
-                </div>
+            <h1 class="text-center fs-1 title-qui-suis-je">
+                {{ $quiSuisJeData['mainTitle'] }}
+            </h1>
+            <div class="blocTilteHo my-5">
+                <h2 class="text-center titleH1 my-5 fs-1">
+                    {{ $quiSuisJeData['title'] }}
+                </h2>
+                <div class="line my-2"><span></span></div>
+            </div>
+            @foreach ($quiSuisJeData['sections'] as $section)
                 <div class="row text-center my-5 pictoBloc">
                     @foreach ($section['items'] as $item)
                         <article class="col-6 col-md-3 d-flex flex-column align-items-center mb-4">
-                            <img src="{{ asset($item['img'])?? ''}}" alt="{{ $item['alt'] }}" class="img-fluid"
+                            <img src="{{ asset($item['img']) ?? '' }}" alt="{{ $item['alt'] }}" class="img-fluid"
                                 style="max-width: {{ $item['max_width'] }};">
                             <h4 class="fs-4 my-3">
                                 {{ $item['label'] }}
@@ -57,29 +61,33 @@
     {{-- Section : Route --}}
     <section class="route">
         <div class="container">
-            <h1 class="text-center fs-1 titleH1 my-5 p-5">
-                {{ $kenkoHoData['routeSection']['title'] }}
-            </h1>
+            <div class="blocTitleHo my-5">
+                <h2 class="text-center titleH1 my-5">
+                    {{ $quiSuisJeData['routeSection']['title'] }}
+                </h2>
+                <div class="line my-2"><span></span></div>
+            </div>
+
             <div class="row d-flex align-items-center justify-content-center">
                 <article class="col-md-12 my-5 p-5">
                     <div class="boxWhoIam text-center rounded-5 p-5">
                         <div class="col-md-12 d-flex align-items-center justify-content-center">
-                            <img src="{{ asset($kenkoHoData['routeSection']['image']['src']) ?? ''}}"
-                                alt="{{ $kenkoHoData['routeSection']['image']['alt'] }}"
-                                style="height: {{ $kenkoHoData['routeSection']['image']['height'] }};">
+                            <img src="{{ asset($quiSuisJeData['routeSection']['image']['src']) ?? '' }}"
+                                alt="{{ $quiSuisJeData['routeSection']['image']['alt'] }}"
+                                style="height: {{ $quiSuisJeData['routeSection']['image']['height'] }};">
                         </div>
 
-                        @foreach ($kenkoHoData['routeSection']['paragraphs'] as $paragraph)
+                        @foreach ($quiSuisJeData['routeSection']['paragraphs'] as $paragraph)
                             <p class="fontWhite my-3">
                                 {{ $paragraph }}
                             </p>
                         @endforeach
 
                         <div class="text-center my-5">
-                            <a href="{{ $kenkoHoData['routeSection']['button']['url'] }}" target="_blank"
+                            <a href="{{ $quiSuisJeData['routeSection']['button']['url'] }}" target="_blank"
                                 rel="noopener noreferrer">
                                 <button class="button">
-                                    {{ $kenkoHoData['routeSection']['button']['text'] }}
+                                    {{ $quiSuisJeData['routeSection']['button']['text'] }}
                                 </button>
                             </a>
                         </div>
