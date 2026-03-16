@@ -7,7 +7,7 @@
 @section('content')
     <section class="contact my-5">
         <div class="container">
-            <h1 class="text-center text-muted mb-5 titleH1">
+            <h1 class="text-center text-muted mb-5 titleH1 fs-2">
                 {{ $contactData['title'] }}
             </h1>
 

@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Formulaire de contact',
+    'title' => 'Contactez-moi',
 
     'illustration' => [
         'src' => '/assets/img/form/contact.svg',
