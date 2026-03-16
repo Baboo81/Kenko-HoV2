@@ -16,10 +16,12 @@
 :root
 {
     --vert : #536964;
+    --violet : #bd8bca;
+    --orange : #e47c3c;
     --grisF : #8b9cb6;
     --gris : #bfc1c2;
-    --beige : #f1efe9;
     --or : #FFFFF0;
+    --beige : #f1efe9;
     --brun : #e3c7af;
     --noir : #282828;
 }
@@ -52,7 +54,7 @@ footer.footer
   font-weight: 700;
   color: var(--vert);
   margin-bottom: 1.5rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem !important;
 }
 
 .footer-text
@@ -95,7 +97,7 @@ footer.footer
 {
   text-align: center;
   font-weight: 600;
-  color: var(--brun);
+  color: var(--violet);
   border-top: 1px solid rgba(0,0,0,0.1);
   margin-top: 3rem;
   padding-top: 1.5rem;

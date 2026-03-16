@@ -4,6 +4,7 @@ use App\Http\Controllers\Themes\DixHuilesController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\QuiSuisJeController;
 use App\Http\Controllers\TestimonialsController;
 use App\Http\Controllers\Themes\BasesController;
 use App\Http\Controllers\Themes\CuisineController;
@@ -20,6 +21,7 @@ use Nette\Schema\Elements\Base;
 // ROUTES PRINCIPALES.  //
 // =======================
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/qui-suis-je', [QuiSuisJeController::class, 'show'])->name('qui-suis-je');
 
 // =======================
 // ROUTES -> THEMES     //
