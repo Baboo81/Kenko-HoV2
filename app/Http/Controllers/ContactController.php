@@ -48,7 +48,7 @@ class ContactController extends Controller
             $contact = Contact::create($validated);
 
             // Envoi de l'email :
-            Mail::send('emails.email', ['contact' => $contact], function ($message) use ($contact) {
+            Mail::send('emails.emails', ['contact' => $contact], function ($message) use ($contact) {
             $message->to('info@kenko-web.be')
                     ->subject('Nouveau message de Kenko');
                 });

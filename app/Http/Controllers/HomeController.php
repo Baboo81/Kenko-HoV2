@@ -26,12 +26,12 @@ class HomeController extends Controller
         $data = $this->loadPageData('home');
 
         //Récupération des témoignages depuis la DB :
-        //$testimonialsFromDB = Testimonial::latest()->get(['name', 'comment', 'rating'])->toArray();
+        $testimonialsFromDB = Testimonial::latest()->get(['name', 'comment', 'rating'])->toArray();
 
         //Fusionner les témoignages :
         $data['testimonials'] = array_merge(
             $data['testimonials'] ?? [],
-           // $testimonialsFromDB
+            $testimonialsFromDB
         );
 
 
