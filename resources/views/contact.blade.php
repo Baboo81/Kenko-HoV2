@@ -7,9 +7,6 @@
 @section('content')
     <section class="contact my-5">
         <div class="container">
-            <h1 class="text-center text-muted mb-5 titleH1 fs-2">
-                {{ $contactData['title'] }}
-            </h1>
 
             {{-- Messages flash --}}
             @foreach (['success' => 'success', 'error' => 'danger'] as $key => $type)
@@ -22,6 +19,12 @@
             @endforeach
 
             <div class="row align-items-center g-5">
+                <div class="blocTitleHo my-5">
+                    <h1 class="text-center titleH1 my-5 fs-1">
+                        {{ $contactData['title'] }}
+                    </h1>
+                    <div class="line my-2"><span></span></div>
+                </div>
                 {{-- Illustration --}}
                 <div class="col-md-6 d-none d-md-flex justify-content-center">
                     <img src="{{ asset($contactData['illustration']['src']) ?? '' }}"

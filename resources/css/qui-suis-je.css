@@ -75,6 +75,11 @@ p
     position: relative; /*pour les ajustements*/
 }
 
+.explainContent
+{
+    padding: 100px 0;
+}
+
 .title-qui-suis-je
 {
     color: var(--violet);

@@ -12,13 +12,16 @@
                     class="img-fluid">
             </div>
 
-            <h1 class="fs-1 titleH1 my-5 p-5">
-                {{ $faqData['titles']['main_Title'] ?? '' }}
-            </h1>
+            <div class="blocTilteHo my-5">
+                <h1 class="fs-1 titleH1 my-5">
+                    {{ $faqData['titles']['main_Title'] ?? '' }}
+                </h1>
+                <div class="line my-2"><span></span></div>
+            </div>
 
             {{-- SECTION KENKO HO --}}
-            <div class="my-5">
-                <h2 class="text-center my-5 fs-1 titleH1">
+            <div class="faqContent my-5">
+                <h2 class="text-center my-5 fs-1 titleH1 fontViolet">
                     {{ $faqData['titles']['sub_Title2'] ?? '' }}
                 </h2>
                 <div class="accordion" id="accordionKenkoHo">
@@ -48,7 +51,7 @@
 
             {{-- SECTION CONTACT --}}
             <div class="my-5 p-5">
-                <h2 class="text-center my-5 fs-1 titleH1">
+                <h2 class="text-center my-5 fs-1 titleH1 fontViolet">
                     {{ $faqData['contact']['title'] ?? '' }}
                 </h2>
 

@@ -32,14 +32,16 @@
     {{-- Section : Qui suis-je ? --}}
     <section class="quiSuisJe my-5">
         <div class="container">
-            <h1 class="text-center fs-1 title-qui-suis-je">
-                {{ $quiSuisJeData['mainTitle'] }}
-            </h1>
             <div class="blocTilteHo my-5">
-                <h2 class="text-center titleH1 my-5 fs-1">
+                <h1 class="text-center titleH1 my-5 fs-1">
+                    {{ $quiSuisJeData['mainTitle'] }}
+                </h1>
+                <div class="line my-2"><span></span></div>
+            </div>
+            <div class="explainContent">
+                <h2 class="text-center fs-1 title-qui-suis-je">
                     {{ $quiSuisJeData['title'] }}
                 </h2>
-                <div class="line my-2"><span></span></div>
             </div>
             @foreach ($quiSuisJeData['sections'] as $section)
                 <div class="row text-center my-5 pictoBloc">

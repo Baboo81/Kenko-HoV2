@@ -35,9 +35,13 @@ html, body
     min-width: 320px;
 }
 
+.fontViolet
+{
+    color: var(--violet) !important;
+}
+
 .titleH1
 {
-    color: var(--vert);
     text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
 }
 
@@ -45,11 +49,22 @@ html, body
 {
     font-size: clamp(1rem, 2.5vw, 1.5rem);
     font-weight: 600;
+    color: var(--violet);
+}
+
+.accordion-body
+{
+    color: var(--vert);
 }
 
 .faq
 {
     background-color: var(--or);
+}
+
+.faqContent
+{
+    padding: 100px 0;
 }
 
 section .contactUs
