@@ -67,11 +67,10 @@ p
 
 .whoIam
 {
-    padding: 0;
+    padding: 150px 0;
     min-height: 100% !important;
     background-size: cover;
     background-position: center;
-    background-color: var(--brun);
     position: relative; /*pour les ajustements*/
 }
 

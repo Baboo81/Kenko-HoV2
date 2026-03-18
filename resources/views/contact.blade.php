@@ -20,7 +20,7 @@
 
             <div class="row align-items-center g-5">
                 <div class="blocTitleHo my-5">
-                    <h1 class="text-center titleH1 my-5 fs-1">
+                    <h1 class="text-center titleH1 mb-4 fs-1">
                         {{ $contactData['title'] }}
                     </h1>
                     <div class="line my-2"><span></span></div>
