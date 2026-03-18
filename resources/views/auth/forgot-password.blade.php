@@ -31,7 +31,7 @@
                     @endif
 
                     {{-- Formulaire --}}
-                    <form method="POST" action="{{ route('password.email') }}">
+                    <form method="POST" action="{{ route('password.email') }}" class="form-forgotPw">
                         @csrf
 
                         <div class="mb-3">
@@ -47,14 +47,14 @@
                         </div>
 
                         <div class="d-grid my-4">
-                            <button type="submit" class="btn btn-primary">
-                                Envoyer le lien de réinitialisation
+                            <button type="submit" class="button">
+                                Réinitialisation
                             </button>
                         </div>
 
                         <div class="text-center">
                             <a href="{{ route('login') }}" class="text-decoration-none">
-                                <button type="button" class="btn btn-outline-secondary">
+                                <button type="button" class="button">
                                     Retour à la connexion
                                 </button>
                             </a>
