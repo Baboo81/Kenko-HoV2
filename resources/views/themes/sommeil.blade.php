@@ -9,7 +9,7 @@
         <div class="container">
             <div class="text-center">
                 <div class="mainTitleContent blocTitleHo mb-5">
-                    <h2 class="text-muted mb-4">{{ $sommeilData['title'] }}</h2>
+                    <h2 class="titleHo mb-4">{{ $sommeilData['title'] }}</h2>
                     <div class="line"><span></span></div>
                 </div>
             </div>

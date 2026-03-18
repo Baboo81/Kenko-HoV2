@@ -10,7 +10,7 @@
         <div class="row">
             <div class="text-center">
                 <div class="mainTitleContent blocTitleHo my-5">
-                    <h2 class="text-muted text-center mb-4">{{ $douleursData['title'] }}</h2>
+                    <h2 class="titleHo text-center mb-4">{{ $douleursData['title'] }}</h2>
                     <div class="line"><span></span></div>
                 </div>
             </div>

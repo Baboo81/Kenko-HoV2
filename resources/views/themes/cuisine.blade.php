@@ -10,7 +10,7 @@
         <div class="container">
             <div class="text-center mb-5">
                 <div class="blocTitleCuisine my-5">
-                    <h2 class="text-muted mb-4">{{ $cuisineData['title'] }}</h2>
+                    <h2 class="titleHo mb-4">{{ $cuisineData['title'] }}</h2>
                     <div class="line my-2"><span></span></div>
                 </div>
             </div>

@@ -147,6 +147,8 @@
     </section>
     {{-- Section : Slider END --}}
 
+    <div id="commentBox"></div>
+
     {{-- Section : Témoignages --}}
     <div class="row">
         <div class="bloc1 text-center my-5">

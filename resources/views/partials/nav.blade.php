@@ -40,7 +40,7 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">Votre avis compte</a></li>
+                        <li><a class="dropdown-item" href="{{ route('home') }}#commentBox">Votre avis compte</a></li>
                     </ul>
                 </li>
             </ul>
