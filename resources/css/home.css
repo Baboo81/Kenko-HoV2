@@ -246,6 +246,7 @@ h1.mainTitleHeroHo:after
 .userName
 {
     font-size: 2rem;
+    color: var(--vert);
 }
 
 .subTitle

@@ -65,6 +65,36 @@
 
                         </div>
 
+                        {{-- Prénom --}}
+
+                        {{-- Prénom --}}
+
+                        <div class="mb-3">
+
+                            <label for="firstname" class="form-label fw-semibold">
+                                Prénom
+                            </label>
+
+                            <div class="input-group">
+
+                                <span class="input-group-text">
+                                    <i class="bi bi-person"></i>
+                                </span>
+
+                                <input id="firstname" type="text"
+                                    class="form-control @error('firstname') is-invalid @enderror" name="firstname"
+                                    value="{{ old('firstname') }}" required>
+
+                            </div>
+
+                            @error('firstname')
+                                <div class="invalid-feedback d-block">
+                                    {{ $message }}
+                                </div>
+                            @enderror
+
+                        </div>
+
                         {{-- Email --}}
 
                         <div class="mb-3">

@@ -69,9 +69,9 @@
 
                     <li class="nav-item">
 
-                        <form method="POST" action="{{ route('logout') }}">
+                        <form method="POST" action="{{ route('logout') }}" class="btn-logout">
                             @csrf
-                            <button class="nav-link btn btn-link" type="submit">
+                            <button class="button" type="submit">
                                 Déconnexion
                             </button>
                         </form>

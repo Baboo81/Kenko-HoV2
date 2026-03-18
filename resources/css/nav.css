@@ -219,6 +219,11 @@ img.avatar
     border-radius: 50%;
 }
 
+.btn-logout
+{
+    background: none;
+}
+
 /* END Nav */
 
 /* Media queries */

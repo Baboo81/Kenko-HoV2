@@ -19,7 +19,7 @@
             <article class="text-center">
                 <div class="text-center userName my-5">
                     @auth
-                        Bienvenue <strong>{{ Auth::user()->name }}</strong>
+                        Bienvenue, <strong>{{ Auth::user()->firstname }}</strong>
                     @endauth
                 </div>
                 <h1 class="mainTitleHeroHo"></h1>
