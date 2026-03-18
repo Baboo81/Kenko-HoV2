@@ -11,7 +11,7 @@
             <div class="row">
                 <div class="text-center">
                     <div class="mainTitleContent blocTitleHo my-5">
-                        <h2 class="text-muted text-center mb-4">{{ $basesData['title'] }}</h2>
+                        <h2 class="text-center titleH1 mb-4">{{ $basesData['title'] }}</h2>
                         <div class="line"><span></span></div>
                     </div>
                 </div>
@@ -27,7 +27,7 @@
                                 <p class="text-center">{{ $basesData['intro'] }}</p>
                                 <ul class="mx-5">
                                     @foreach ($basesData['pillars'] as $pillar)
-                                        <li class="my-3 fs-4 fontBeige">{{ $pillar }}</li>
+                                        <li class="my-3 fs-4">{{ $pillar }}</li>
                                     @endforeach
                                 </ul>
 

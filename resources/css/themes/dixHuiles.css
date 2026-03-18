@@ -18,8 +18,10 @@
 {
     --vert : #536964;
     --violet : #bd8bca;
+    --orange : #e47c3c;
     --grisF : #8b9cb6;
     --gris : #bfc1c2;
+    --or : #FFFFF0;
     --beige : #f1efe9;
     --brun : #e3c7af;
     --noir : #282828;
@@ -43,10 +45,10 @@ html, body
     height: 37px;
     line-height: 33px;
     text-align: center;
-    border: 1px solid var(--grisF);
+    border: 1px solid var(--beige);
     border-radius: 50%;
     font-style: normal;
-    color: var(--grisF);
+    color: var(--beige);
 }
 
 .circleT
@@ -69,10 +71,10 @@ html, body
     height: 37px;
     line-height: 33px;
     text-align: center;
-    border: 1px solid var(--violet);
+    border: 1px solid var(--noir);
     border-radius: 50%;
     font-style: normal;
-    color: var(--violet);
+    color: var(--noir);
 }
 /* Symboles: usages END */
 
@@ -156,9 +158,14 @@ html, body
     bottom: 0.5px;
 }
 
+.box p, ul > li
+{
+    color: var(--beige) !important;
+}
+
 .dixHuiles .box
 {
-    background-color: var(--violet);
+    color: var(--vert);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     font-size: 1.3em;
 }

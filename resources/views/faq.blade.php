@@ -5,6 +5,14 @@
 @section('meta_description', 'FAQ')
 
 @section('content')
+    {{-- Div animation : progression de la page --}}
+    <div id="scroll-indicator">
+        <div class="inner-circle">
+            <div class="scroll-arrow"></div>
+        </div>
+    </div>
+    {{-- Div animation : progression de la page END --}}
+
     <section class="mt-5 text-center faq">
         <div class="container">
             <div class="blob-container mx-auto mb-5">

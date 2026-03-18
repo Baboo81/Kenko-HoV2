@@ -32,12 +32,17 @@
     {{-- Section : Qui suis-je ? --}}
     <section class="quiSuisJe my-5">
         <div class="container">
-            <div class="blocTilteHo my-5">
-                <h1 class="text-center titleH1 my-5 fs-1">
-                    {{ $quiSuisJeData['mainTitle'] }}
-                </h1>
-                <div class="line my-2"><span></span></div>
+            <div class="row">
+                <div class="text-center">
+                    <div class="mainTitleContent blocTilteHo my-5">
+                        <h1 class="text-center titleH1 mb-4 fs-1">
+                            {{ $quiSuisJeData['mainTitle'] }}
+                        </h1>
+                        <div class="line"><span></span></div>
+                    </div>
+                </div>
             </div>
+
             <div class="explainContent">
                 <h2 class="text-center fs-1 title-qui-suis-je">
                     {{ $quiSuisJeData['title'] }}
@@ -63,11 +68,13 @@
     {{-- Section : Route --}}
     <section class="route">
         <div class="container">
-            <div class="blocTitleHo my-5">
-                <h2 class="text-center titleH1 my-5">
-                    {{ $quiSuisJeData['routeSection']['title'] }}
-                </h2>
-                <div class="line my-2"><span></span></div>
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="mainTitleContent blocTitleHo my-5">
+                    <h2 class="text-center titleH1 mb-4">
+                        {{ $quiSuisJeData['routeSection']['title'] }}
+                    </h2>
+                    <div class="line"><span></span></div>
+                </div>
             </div>
 
             <div class="row d-flex align-items-center justify-content-center">
