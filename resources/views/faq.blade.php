@@ -21,7 +21,7 @@
             </div>
 
             <div class="blocTilteHo my-5">
-                <h1 class="fs-1 titleH1 my-5">
+                <h1 class="text-center fs-1 titleH1 mb-4">
                     {{ $faqData['titles']['main_Title'] ?? '' }}
                 </h1>
                 <div class="line my-2"><span></span></div>
