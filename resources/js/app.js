@@ -27,6 +27,7 @@ import './klaro-gtm.js';
  */
 
 import { createIcons } from 'lucide';
+
 document.addEventListener("DOMContentLoaded", () => {
-    lucide.createIcons();
+    createIcons(); // ✅ fonction correcte
 });

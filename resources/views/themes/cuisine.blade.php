@@ -17,7 +17,7 @@
 
             <div class="box rounded-5 text-center p-5 shadow-sm">
                 <div class="row align-items-center g-4 flex-column-reverse flex-md-row">
-                    <article class="col-md-6 text-center">
+                    <article class="col-md-8 text-center">
                         @foreach ($cuisineData['intro']['paragraphs'] as $paragraph)
                             <p class="text-muted mb-4">{{ $paragraph }}</p>
                         @endforeach
@@ -34,7 +34,7 @@
                         </div>
                     </article>
 
-                    <figure class="col-md-6 text-center">
+                    <figure class="col-md-4 text-center">
                         <img class="img-fluid rounded-4 shadow-sm" src="{{ $cuisineData['intro']['image'] }}"
                             alt="{{ $cuisineData['intro']['alt_image'] }}">
                     </figure>

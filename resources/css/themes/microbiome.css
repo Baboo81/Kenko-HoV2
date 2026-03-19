@@ -34,10 +34,16 @@ html, body
     min-width: 320px;
 }
 
+img
+{
+    max-width: 100%;
+    height: auto;
+}
+
 .img-ho
 {
-    width: 100% !important;
-    height: 350px;
-    object-fit: cover !important;
-
+    width: 100%;
+    height: 360px !important;
+    object-fit: cover;
+    display: block;
 }

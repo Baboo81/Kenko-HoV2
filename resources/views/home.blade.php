@@ -92,7 +92,7 @@
             <div class="row">
                 <div class="bloc1 text-center">
                     <div class="blocTitleHo my-5">
-                        <h2 class="text-center my-3">
+                        <h2 class="text-center mb-4">
                             {{ $kenkoHoData['presentation']['themes_title'] ?? '' }}
                         </h2>
                         <div class="line my-2"><span></span></div>
@@ -151,9 +151,9 @@
 
     {{-- Section : Témoignages --}}
     <div class="row">
-        <div class="bloc1 text-center my-5">
-            <div class="blocTitleHo my-5">
-                <h2 class="text-center my-3">
+        <div class="bloc1 text-center">
+            <div class="blocTitleHo">
+                <h2 class="text-center mb-4">
                     {{ $kenkoHoData['testimonials_title'] ?? '' }}
                 </h2>
                 <div class="line my-2"><span></span></div>
@@ -161,7 +161,7 @@
         </div>
     </div>
     <section class="commentsBox px-3 px-sm-5">
-        <div class="container my-5" id="testimonials">
+        <div class="container" id="testimonials">
             <div class="row">
                 <div class="col-md-8 mx-auto">
                     <div id="testimonialCarousel" class="carousel slide rounded-5" data-bs-ride="carousel">
@@ -183,12 +183,12 @@
                                 </div>
                             @endforeach
                         </div>
-                        <div class="">
-                            <button class="carousel-control-prev custom-control" type="button"
+                        <div class="btn-prev-next">
+                            <button class="carousel-control-prev" type="button"
                                 data-bs-target="#testimonialCarousel" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             </button>
-                            <button class="carousel-control-next custom-control" type="button"
+                            <button class="carousel-control-next" type="button"
                                 data-bs-target="#testimonialCarousel" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             </button>

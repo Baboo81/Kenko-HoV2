@@ -15,7 +15,7 @@
             </div>
             <div class="box rounded-5 p-5 my-5 shadow-sm">
                 <div class="row justify-content-center align-items-center">
-                    <article class="col-md-6 text-center">
+                    <article class="col-md-8 text-center">
                         @foreach ($peauData['intro'] as $paragraph)
                             <p class="text-muted">{{ $paragraph }}</p>
                         @endforeach
@@ -27,7 +27,7 @@
                         <p class="text-muted mb-3">{{ $peauData['guide_text'] }}</p>
                     </article>
 
-                    <div class="col-md-6 text-center">
+                    <div class="col-md-4 text-center">
                         <img class="img-fluid rounded-4" src="{{ $peauData['image']['src'] }}"
                             alt="{{ $peauData['image']['alt'] }}">
                     </div>

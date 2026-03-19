@@ -5,7 +5,7 @@
 @section('meta_description', 'Conseils bien-être, huiles essentielles et santé naturelle.')
 
 @section('content')
-    <section class="mainSection">
+    <section class="reiki">
         <div class="container">
             {{-- Titre principal --}}
             <div class="row">

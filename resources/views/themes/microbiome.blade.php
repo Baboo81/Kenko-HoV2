@@ -22,18 +22,18 @@
                     </article>
 
                     <div class="col-md-4 text-center">
-                        <img class="img-fluid img-ho rounded-4" src="{{ $microbiomeData['images']['main']['src'] }}"
+                        <img class="img-ho rounded-4" src="{{ $microbiomeData['images']['main']['src'] }}"
                             alt="{{ $microbiomeData['images']['main']['alt'] }}">
                     </div>
                 </div>
 
                 <div class="row align-items-center my-5">
-                    <div class="col-md-4 text-center mb-4 mb-md-0">
-                        <img class="img-fluid img-ho rounded-4" src="{{ $microbiomeData['images']['secondary']['src'] }}"
+                    <div class="col-md-7 text-center mb-4 mb-md-0">
+                        <img class="img-ho rounded-1" src="{{ $microbiomeData['images']['secondary']['src'] }}"
                             alt="{{ $microbiomeData['images']['secondary']['alt'] }}">
                     </div>
 
-                    <article class="col-md-8 text-center">
+                    <article class="col-md-5 text-center">
                         <h3 class="my-4">{{ $microbiomeData['guide']['title'] }}</h3>
                         <p class="text-muted">{{ $microbiomeData['guide']['text'] }}</p>
                     </article>

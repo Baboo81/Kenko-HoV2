@@ -15,8 +15,8 @@
             </div>
 
             <div class="box rounded-5 p-5 my-5">
-                <div class="row align-items-center">
-                    <article class="col-md-6">
+                <div class="row align-items-center justufy-content-center">
+                    <article class="col-md-8">
                         @foreach ($sommeilData['intro'] as $paragraph)
                             <p class="text-muted">{{ $paragraph }}</p>
                         @endforeach
@@ -28,7 +28,7 @@
                         <p class="text-muted mb-3">{{ $sommeilData['guide_text'] }}</p>
                     </article>
 
-                    <div class="col-md-6 text-center">
+                    <div class="col-md-4 text-center">
                         <img class="img-fluid rounded-4" src="{{ $sommeilData['image']['src'] }}"
                             alt="{{ $sommeilData['image']['alt'] }}">
                     </div>
