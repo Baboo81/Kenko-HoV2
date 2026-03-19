@@ -23,7 +23,6 @@
 	.st17{fill:#FFBE9D;}
 	.st18{fill:#EB996E;}
 	.st19{opacity:0.2;}
-	.st20{fill:#536964;}
 </style>
 <g id="Background_Complete">
 	<g>
@@ -3772,7 +3771,4 @@
 		</g>
 	</g>
 </g>
-<rect x="-282.2" y="39.1" class="st20" width="200" height="91"/>
-<rect x="-282.2" y="171.9" class="st7" width="200" height="91"/>
-<rect x="-282.2" y="307.1" class="st9" width="200" height="91"/>
 </svg>

@@ -5,7 +5,7 @@
 @section('meta_description', 'Conseils bien-être, huiles essentielles et santé naturelle.')
 
 @section('content')
-<section class="mainSection">
+<section class="douleurs">
     <div class="container">
         <div class="row">
             <div class="text-center">
@@ -20,7 +20,7 @@
             <div class="col-md-12 my-5">
                 <div class="box rounded-5 p-5 my-5">
                     <div class="row">
-                        <article class="col-md-6 text-center">
+                        <article class="col-md-8 text-center mt-5">
                             @foreach ($douleursData['intro']['paragraphs'] as $paragraph)
                                 <p class="text-muted">{{ $paragraph }}</p>
                             @endforeach
@@ -31,7 +31,7 @@
                             <p class="text-muted mb-3">{{ $douleursData['guide']['description'] }}</p>
                         </article>
 
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <img class="img-fluid rounded-4"
                                  src="{{ $douleursData['images']['main'] }}"
                                  alt="{{ $douleursData['images']['alt'] }}"

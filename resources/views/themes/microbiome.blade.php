@@ -15,25 +15,25 @@
                 </div>
             <div class="box rounded-5 p-5 my-5 shadow-sm">
                 <div class="row align-items-center">
-                    <article class="col-md-6 mb-4 text-center">
+                    <article class="col-md-8 mb-4 text-center">
                         @foreach ($microbiomeData['intro'] as $paragraph)
                             <p class="text-muted">{{ $paragraph }}</p>
                         @endforeach
                     </article>
 
-                    <div class="col-md-6 text-center">
-                        <img class="img-fluid rounded-4" src="{{ $microbiomeData['images']['main']['src'] }}"
-                            alt="{{ $microbiomeData['images']['main']['alt'] }}" style="height: 27rem;">
+                    <div class="col-md-4 text-center">
+                        <img class="img-fluid img-ho rounded-4" src="{{ $microbiomeData['images']['main']['src'] }}"
+                            alt="{{ $microbiomeData['images']['main']['alt'] }}">
                     </div>
                 </div>
 
                 <div class="row align-items-center my-5">
-                    <div class="col-md-6 text-center mb-4 mb-md-0">
-                        <img class="img-fluid rounded-4" src="{{ $microbiomeData['images']['secondary']['src'] }}"
+                    <div class="col-md-4 text-center mb-4 mb-md-0">
+                        <img class="img-fluid img-ho rounded-4" src="{{ $microbiomeData['images']['secondary']['src'] }}"
                             alt="{{ $microbiomeData['images']['secondary']['alt'] }}">
                     </div>
 
-                    <article class="col-md-6 text-center">
+                    <article class="col-md-8 text-center">
                         <h3 class="my-4">{{ $microbiomeData['guide']['title'] }}</h3>
                         <p class="text-muted">{{ $microbiomeData['guide']['text'] }}</p>
                     </article>

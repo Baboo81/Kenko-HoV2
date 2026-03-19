@@ -18,14 +18,14 @@
             <div class="row align-items-center">
 
                 {{-- IMAGE : en premier sur mobile & tablette, en second sur desktop --}}
-                <div class="col-md-6 my-3 text-center order-1 order-md-1 order-lg-2">
+                <div class="col-md-4 my-3 text-center order-1 order-md-1 order-lg-2">
                     <img class="img-fluid rounded-4"
                          src="{{ $emotionsData['image']['src'] }}"
                          alt="{{ $emotionsData['image']['alt'] }}">
                 </div>
 
                 {{-- TEXTE : après l'image sur mobile & tablette, avant l'image sur desktop --}}
-                <article class="col-md-6 text-center order-2 order-md-2 order-lg-1">
+                <article class="col-md-8 text-center order-2 order-md-2 order-lg-1">
                     @foreach ($emotionsData['intro'] as $paragraph)
                         <p class="text-muted">{{ $paragraph }}</p>
                     @endforeach

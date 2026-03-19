@@ -33,3 +33,11 @@ html, body
     min-height: 500px;
     min-width: 320px;
 }
+
+.img-ho
+{
+    width: 100% !important;
+    height: 350px;
+    object-fit: cover !important;
+
+}
