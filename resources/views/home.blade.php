@@ -34,7 +34,7 @@
     <!-- SVG WAVE -->
     <svg class="waveKenkoHo" viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true" role="img">
-        <path d="M0,32 C200,120 400,0 720,48 C1040,96 1240,0 1440,48 L1440 120 L0 120 Z" fill="#FFFFF0"></path>
+        <path d="M0,32 C200,120 400,0 720,48 C1040,96 1240,0 1440,48 L1440 120 L0 120 Z" fill="#536964"></path>
     </svg>
 
     {{-- Section : Présentation --}}

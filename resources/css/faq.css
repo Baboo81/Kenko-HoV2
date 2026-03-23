@@ -92,6 +92,28 @@ html, body
 }
 /* END */
 
+.faq-container
+{
+    background-color: var(--gris);
+}
+
+.faq img
+{
+    max-width: 1050px;
+    width: 100%;
+    height: auto;
+}
+
+.waveKenkoHoFaq
+{
+  display:block;
+  width:100%;
+  height:80px;
+  margin-top: -50px;
+  transform: scaleY(-1);
+}
+
+
 /* Surlignage */
 .blocTitleHo
 {
@@ -116,7 +138,6 @@ html, body
   background: var(--violet);
   margin: auto;
 }
-
 /* Surlignage END */
 
 .fontViolet

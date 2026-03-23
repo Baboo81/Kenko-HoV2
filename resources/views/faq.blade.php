@@ -13,12 +13,21 @@
     </div>
     {{-- Div animation : progression de la page END --}}
 
-    <section class="mt-5 text-center faq">
-        <div class="container">
-            <div class="blob-container mx-auto mb-5">
+    <section class="text-center faq">
+        <div class="row">
+            <div class="faq-container mx-auto mb-5">
                 <img src="/assets/img/FAQ/faq.svg" alt="Illustration de personnages absorbés par leurs écrans"
                     class="img-fluid">
             </div>
+            <!-- SVG WAVE -->
+            <svg class="waveKenkoHoFaq" viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true" role="img">
+                <path d="M0,32 C200,120 400,0 720,48 C1040,96 1240,0 1440,48 L1440 120 L0 120 Z" fill="#bfc1c2"></path>
+            </svg>
+        </div>
+
+
+        <div class="container">
 
             <div class="text-center">
                 <div class="blocTitleHo my-5">
@@ -42,8 +51,8 @@
                         @endphp
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="{{ $headingId }}">
-                                <button class="accordion-button collapsed accordion-title" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#{{ $collapseId }}" aria-expanded="false"
+                                <button class="accordion-button collapsed accordion-title" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#{{ $collapseId }}" aria-expanded="false"
                                     aria-controls="{{ $collapseId }}">
                                     {!! $item['question'] !!}
                                 </button>
