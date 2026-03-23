@@ -2,6 +2,10 @@
 
 return [
     'mainTitle' => "Qui suis-je ?",
+    'banner' => [
+        'name' => "Christel Rodriguez Perez",
+        'title' => "Votre conseillère bien-être",
+    ],
     'title' => "Devenir conseillère bien-être m'a permis de regrouper d'autres passions",
     'sections' => [
         [

@@ -2,32 +2,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&display=swap" rel="stylesheet">');
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&display=swap" rel="stylesheet">');
 
-@font-face
-{
-  font-family: 'Dastin';
-  src : url('../fonts/Dastin.otf') format('opentype'),
+@font-face {
+    font-family: 'Dastin';
+    src: url('../fonts/Dastin.otf') format('opentype'),
         url('../fonts/Dastin.ttf') format('trutype'),
         url('../fonts/Dastin.woff') format('woff'),
         url('../fonts/Dastin.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
-:root
-{
-    --vert : #536964;
-    --violet : #bd8bca;
-    --orange : #e47c3c;
-    --grisF : #8b9cb6;
-    --gris : #bfc1c2;
-    --or : #FFFFF0;
-    --beige : #f1efe9;
-    --brun : #e3c7af;
-    --noir : #282828;
+:root {
+    --vert: #536964;
+    --violet: #bd8bca;
+    --orange: #e47c3c;
+    --grisF: #8b9cb6;
+    --gris: #bfc1c2;
+    --or: #FFFFF0;
+    --beige: #f1efe9;
+    --brun: #e3c7af;
+    --noir: #282828;
 }
 
-html, body
+html,
+body
 {
     width: 100% !important;
     overflow-x: hidden;
@@ -49,7 +48,7 @@ p
 .titleH1
 {
     color: var(--orange) !important;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .fontWhite
@@ -65,39 +64,71 @@ p
     padding: 200px 0;
 }
 
-.whoIam
+.banner
 {
-    padding: 150px 0;
-    min-height: 100% !important;
-    background-size: cover;
-    background-position: center;
-    position: relative; /*pour les ajustements*/
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 15px;
 }
 
-.explainContent
+.banner p
 {
+    color: var(--violet);
+    font-size: 2rem;
+}
+
+.whoIam {
+    padding: 150px 0;
+    min-height: 100% !important;
+    background-color: var(--brun);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /*pour les ajustements*/
+}
+
+.whoiam-photo
+{
+    position: absolute;
+    top: 30%;
+    left: 48.5%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px !important;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+@media (min-width: 768px)
+{
+    .whoiam-photo
+    {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+.explainContent {
     padding: 100px 0;
 }
 
-.title-qui-suis-je
-{
+.title-qui-suis-je {
     color: var(--violet);
 }
 
-.mainTitleContent
-{
+.mainTitleContent {
     position: relative;
 }
 
 /* Surlignage */
-.blocTitleHo
-{
-  position: relative;
-  display: inline-block;
+.blocTitleHo {
+    position: relative;
+    display: inline-block;
 }
 
-.line
-{
+.line {
     position: absolute;
     width: 100%;
     background: var(--vert);
@@ -106,8 +137,7 @@ p
     margin-top: -1%;
 }
 
-.line span
-{
+.line span {
     display: block;
     width: 70%;
     height: 4px;
@@ -117,47 +147,42 @@ p
     bottom: 0.5px;
 }
 
-.whoIam img
-{
+.whoIam img {
     max-width: 100%;
     height: 50Vh !important;
 }
+
 /* END section qui suis-je ?*/
 
-article img
-{
+article img {
     height: max-content;
 }
 
-.pictoBloc
-{
+.pictoBloc {
     padding: 100px 0;
 }
 
-.pictoBloc img
-{
+.pictoBloc img {
     transition: transform 0.3s ease, filter 0.3 ease;
     filter: grayscale(100%) brightness(0.7);
 }
 
-.pictoBloc img:hover
-{
+.pictoBloc img:hover {
     transform: scale(1.1);
     filter: grayscale(0%) brightness(1);
 }
 
-section .boxWhoIam
-{
+section .boxWhoIam {
     background-color: var(--grisF);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 /* Media Queries */
-@media only screen and (max-width: 768px)
-{
-    .whoIam
-    {
-        margin-top: 5%; /* Réduit la marge supérieure pour les petits écrans */
-        padding: 2rem 0; /* Ajoute un peu de padding sur le dessus et le dessous */
+@media only screen and (max-width: 768px) {
+    .whoIam {
+        margin-top: 5%;
+        /* Réduit la marge supérieure pour les petits écrans */
+        padding: 2rem 0;
+        /* Ajoute un peu de padding sur le dessus et le dessous */
     }
 }

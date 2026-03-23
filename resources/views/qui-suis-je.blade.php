@@ -23,11 +23,31 @@
                         <img src="{{ asset('assets/img/quiSuisJe/quiSuisJe.svg') }}" alt="Photo me représentant"
                             class="img-fluid">
                     </div>
+                    {{-- Photo superposé&e --}}
+                    <div class="mb-3">
+                        <img src="{{ asset('assets/img/quiSuisJe/dev.webp') }}" alt="Christel Rodriguez Perez"
+                            class="whoiam-photo">
+                    </div>
+                    {{-- Encadré nom et titre --}}
+                    <div class="banner p-3 mx-auto text-center my-5">
+                        <h2 class="mb-1">
+                            {{ $quiSuisJeData['banner']['name'] }}
+                        </h2>
+                        <p class="mb-0">
+                            {{ $quiSuisJeData['banner']['title'] }}
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     {{-- Section : WhoIam END --}}
+
+    <!-- SVG WAVE -->
+    <svg class="waveKenkoHo" viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true" role="img">
+        <path d="M0,32 C200,120 400,0 720,48 C1040,96 1240,0 1440,48 L1440 120 L0 120 Z" fill="#e3c7af"></path>
+    </svg>
 
     {{-- Section : Qui suis-je ? --}}
     <section class="quiSuisJe my-5">
