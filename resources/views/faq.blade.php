@@ -20,11 +20,13 @@
                     class="img-fluid">
             </div>
 
-            <div class="blocTilteHo my-5">
-                <h1 class="text-center fs-1 titleH1 mb-4">
-                    {{ $faqData['titles']['main_Title'] ?? '' }}
-                </h1>
-                <div class="line my-2"><span></span></div>
+            <div class="text-center">
+                <div class="blocTitleHo my-5">
+                    <h2 class="text-center titleH1 mb-4">
+                        {{ $faqData['titles']['main_Title'] }}
+                    </h2>
+                    <div class="line"><span></span></div>
+                </div>
             </div>
 
             {{-- SECTION KENKO HO --}}

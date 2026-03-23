@@ -33,7 +33,7 @@
                         <h2 class="mb-1">
                             {{ $quiSuisJeData['banner']['name'] }}
                         </h2>
-                        <p class="mb-0">
+                        <p class="my-3">
                             {{ $quiSuisJeData['banner']['title'] }}
                         </p>
                     </div>
@@ -54,10 +54,10 @@
         <div class="container">
 
             <div class="text-center">
-                <div class="blocTilteHo my-5">
-                    <h1 class="text-center titleH1 mb-4 fs-1">
+                <div class="blocTitleHo my-5">
+                    <h2 class="text-center titleH1 mb-4">
                         {{ $quiSuisJeData['mainTitle'] }}
-                    </h1>
+                    </h2>
                     <div class="line"><span></span></div>
                 </div>
             </div>
