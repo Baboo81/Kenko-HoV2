@@ -155,7 +155,7 @@ button:hover, .button:hover
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-image: url('../../public/assets/img/home/KenkoHo_banner.svg');
+    background-image: url('/assets/img/home/KenkoHo_banner.svg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
